@@ -1,0 +1,6 @@
+{
+  "label": "TypeScript compile",
+  "type": "shell",
+  "command": "ts-node ${file}",
+  "problemMatcher": ["$tsc"]
+}

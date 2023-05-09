@@ -1,0 +1,13 @@
+{
+  "name": "algo-expert",
+  "version": "1.0.0",
+  "description": "Algo expect learning challenges",
+  "author": "Tulio Caldas",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --inspect=0.0.0.0:7001 --exit-child --respawn src/index.ts"
+  }
+}
