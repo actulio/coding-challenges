@@ -17,8 +17,7 @@ export function middleNode(linkedList: LinkedList) {
   while (fastPointer !== null && fastPointer.next !== null) {
     console.log(slowPointer?.value, fastPointer.value);
     slowPointer = slowPointer ? slowPointer.next : null;
-    const temp: LinkedList | null = fastPointer.next;
-    fastPointer = temp ? temp.next : null;
+    fastPointer = fastPointer.next.next;
   }
 
   return slowPointer;
