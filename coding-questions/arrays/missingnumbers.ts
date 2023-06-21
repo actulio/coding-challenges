@@ -9,7 +9,6 @@ export function missingNumbers(nums: number[]) {
   return output;
 }
 
-// const INPUT = [3, 1, 2];
 const INPUT = [2];
 const result = missingNumbers(INPUT);
 console.log(result);
