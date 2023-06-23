@@ -30,5 +30,6 @@ export function isMonotonic2(array: number[]) {
 }
 
 const ARRAY = [-1, -5, -10, -1100, -900, -1101, -1102, -9001];
+// const ARRAY = [-1, -5, -10, -1100, -900, -1101, -1102, -9001];
 const result = isMonotonic(ARRAY);
 console.log(result);
