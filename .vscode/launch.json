@@ -9,6 +9,7 @@
       "runtimeArgs": ["-r", "ts-node/register"],
       "cwd": "${workspaceRoot}",
       // "protocol": "inspector",
+      // control shift b
       "internalConsoleOptions": "openOnSessionStart"
     }
   ]
