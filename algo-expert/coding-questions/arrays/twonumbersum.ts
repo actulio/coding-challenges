@@ -11,7 +11,7 @@ function twoNumberSum(array: number[], targetSum: number) {
         return [array[i], array[j]];
       }
     }
-    console.log("");
+    console.log('');
   }
 
   return [];
@@ -32,5 +32,5 @@ function twoNumberSum2(array: number[], targetSum: number) {
 
 const result = twoNumberSum2(input, 10);
 
-console.log("Actual output: ", result);
-console.log("Expected output: ", output);
+console.log('Actual output: ', result);
+console.log('Expected output: ', output);
