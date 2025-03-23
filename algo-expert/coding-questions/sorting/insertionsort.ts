@@ -4,6 +4,7 @@ export function insertionSort(array: number[]) {
   for (let fwdPointer = 0; fwdPointer < array.length; fwdPointer++) {
     for (let i = fwdPointer; i > 0; i--) {
       const curr = array[i];
+      console.log(curr, array[i-1])
       if (curr < array[i - 1]) {
         array[i] = array[i - 1];
         array[i - 1] = curr;
@@ -14,6 +15,7 @@ export function insertionSort(array: number[]) {
   return array;
 }
 
-const ARRAY = [8, 5, 2, 9, 5, 6, 3];
+// const ARRAY = [8, 5, 2, 9, 5, 6, 3];
+const ARRAY = [3,2,4];
 const result = insertionSort(ARRAY);
 console.log(result);
