@@ -1,6 +1,12 @@
 {
-  "label": "TypeScript compile",
+  "version": "2.0.0",
+  "label": "Run Typescript file",
   "type": "shell",
   "command": "ts-node ${file}",
-  "problemMatcher": ["$tsc"]
+  "problemMatcher": ["$tsc"],
+  "tasks": [],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  }
 }
