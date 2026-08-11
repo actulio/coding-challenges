@@ -22,8 +22,7 @@ export function topKFrequent2(nums: number[], k: number): number[] {
   nums.forEach((n) => (hash[n] = (hash[n] || 0) + 1));
 
   const entries = Object.entries(hash);
-  const invertedBucket: number[][] = new Array(nums.length);
-  console.log(invertedBucket)
+  const invertedBucket: number[][] = new Array(nums.length).fill(0);
 
   for (let i = 0; i < entries.length; i++) {
     const number = parseInt(entries[i][0]);
@@ -32,6 +31,8 @@ export function topKFrequent2(nums: number[], k: number): number[] {
     if (invertedBucket[occurrences]) invertedBucket[occurrences].push(number);
     else invertedBucket[occurrences] = [number];
   }
+
+  console.log(invertedBucket);
 
   const result: number[] = [];
   let idx = nums.length;
@@ -47,7 +48,7 @@ export function topKFrequent2(nums: number[], k: number): number[] {
   return result;
 }
 
-// const nums = [1, 1, 1, 2, 2, 3, 3, 3, 3];
-const nums = [1];
+const nums = [1, 1, 1, 2, 2, 3, 3, 3, 3];
+// const nums = [1];
 const k = 1;
 console.log(topKFrequent2(nums, k));

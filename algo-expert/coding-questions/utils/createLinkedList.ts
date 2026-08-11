@@ -18,3 +18,13 @@ export const createLinkedList = (id: string | null, NODES: DescriptionNode[]) =>
   node.next = createLinkedList(nodeOp.next, NODES);
   return node;
 };
+
+export const printLinkedList = (head: LinkedList | null): void => {
+  const values: number[] = [];
+  let current = head;
+  while (current !== null) {
+    values.push(current.value);
+    current = current.next;
+  }
+  console.log(values.join(' -> '));
+};
